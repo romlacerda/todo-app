@@ -9,7 +9,7 @@ export default props => (
                 </a>
             </div>
 
-            <div id="navbar" classname="navbar-collapse collapse">
+            <div id="navbar" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav">
                     <li><a href="#/todos">Tarefas</a></li>
                     <li><a href="#/about">Sobre</a></li>

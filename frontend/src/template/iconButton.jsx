@@ -1,14 +1,10 @@
 import React from 'react'
+import Helper from '../utils/helper'
 
-export default props => {
-    if(props.hide) {
-        return null
-    }
-    else {
-        return(
-            <button className={'btn btn-' + props.style} onClick={props.onClick}>
-                <i className={'fa fa-' + props.icons}></i>
-            </button>
-        )
-    }
-}
+export default props => (
+    <Helper test={!props.hide}>
+        <button className={'btn btn-' + props.style} onClick={props.onClick}>
+            <i className={'fa fa-' + props.icon}></i>
+        </button>
+    </Helper>
+)
